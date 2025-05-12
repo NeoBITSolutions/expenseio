@@ -1,1 +1,122 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @layer base {
+    :root {
+      --background: 224 0% 98%;
+      --foreground: 240 11% 4%;
+
+      --muted: 240 5% 96%;
+      --muted-foreground: 240 4% 46%;
+
+      --popover: 224 0% 98%;
+      --popover-foreground: 240 11% 4%;
+
+      --card: 224 0% 98%;
+      --card-foreground: 240 11% 4%;
+
+      --border: 240 6% 90%;
+      --input: 240 6% 90%;
+      --ring: 142 76% 36%;
+
+      --primary: 162 100% 24%;
+      --primary-foreground: 224 0% 98%;
+
+      --secondary: 150 81% 90%;
+      --secondary-foreground: 240 11% 4%;
+
+      --accent: 236 100% 74%;
+      --accent-foreground: 240 11% 4%;
+
+      --danger: 0 84% 60%;
+      --danger-foreground: 240 11% 4%;
+
+      --success: 142 71% 45%;
+      --success-foreground: 240 11% 4%;
+
+      --warning: 43 96% 56%;
+      --warning-foreground: 240 11% 4%;
+
+      --radius: 0.5rem;
+    }
+    .dark {
+      --background: 20 14% 4%;
+      --foreground: 99% 0 106;
+
+      --muted: 0 0% 15%;
+      --muted-foreground: 240 5% 65%;
+
+      --popover: 0 0% 9%;
+      --popover-foreground: 99% 0 106;
+
+      --card: 24 10% 10%;
+      --card-foreground: 99% 0 106;
+
+      --border: 240 4% 16%;
+      --input: 240 4% 16%;
+      --ring: 142 71% 29%;
+
+      --primary: 162 100% 24%;
+      --primary-foreground: 224 0% 98%;
+
+      --secondary: 150 81% 90%;
+      --secondary-foreground: 240 11% 4%;
+
+      --accent: 236 100% 74%;
+      --accent-foreground: 240 11% 4%;
+
+      --danger: 0 84% 60%;
+      --danger-foreground: 240 11% 4%;
+
+      --success: 142 71% 45%;
+      --success-foreground: 240 11% 4%;
+
+      --warning: 43 96% 56%;
+      --warning-foreground: 240 11% 4%;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen;
+  }
+
+  h1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  }
+
+  h2 {
+    @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+  }
+
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+
+  p {
+    @apply leading-7;
+  }
+
+  blockquote {
+    @apply mt-6 border-l-2 pl-6 italic;
+  }
+
+  code {
+    @apply bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+  }
+
+  small {
+    @apply text-sm font-medium leading-none;
+  }
+}
